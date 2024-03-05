@@ -1,0 +1,86 @@
+/* Тут код для стилів */
+
+/* Можемо звертатись напряму по назві тега */
+h1 {
+    background-color: blue;
+    font-size: 35px;
+}
+
+/* Селектор класу */
+.box {
+    /* Задаю висоту елементу */
+    height: 300px;
+    /* Задаю ширину елементу */
+    width: 300px;
+    /* Задаю рамки елементу */
+    border: 1px solid red;
+    /* Роблю радіус */
+    border-radius: 10%;
+    /* Відштовхую зміст від краю гранись */
+    padding: 50px;
+}
+
+/* Звертаємось до елементу за допомогою ідентифікатору */
+#list {
+    /* Змінимо розмір шрифту */
+    font-size: 17px;
+}
+
+/* Примінимо стилі до групи елементів */
+.list-item {
+    color:blueviolet;
+}
+
+.red {
+    color: red;
+}
+
+.first, 
+.third {
+    color:aquamarine;
+}
+
+.second,
+.forth {
+    color: rgb(203, 247, 115);
+}
+
+/* Загальні стилі для всіх типів повідомлень */
+.alert {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* Специфічні стилі для кожного типу */
+.success {
+    color: green;
+}
+
+
+.warning {
+    color: orange;
+}
+
+
+.error {
+    color: red;
+}
+
+/* ❌ Застосується до всіх посилань у документі */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* ✅ Застосується тільки до посилань, які лежать всередині тегу з класом social-links */
+.social-links a
+ {
+    color: blue;
+    text-decoration: none;
+}
+
+.social-links .link {
+    color:chartreuse;
+}
