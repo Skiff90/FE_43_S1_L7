@@ -1,4 +1,16 @@
+/* Підключаємо scc змінні */
+:root {
+    --main-color:black;
+    --alert-succes:green;
+    --alert-warning:orange;
+    --alert-error:red;
+}
+
 /* Тут код для стилів */
+
+body {
+    color: var(--main-color,black);
+}
 
 /* Можемо звертатись напряму по назві тега */
 h1 {
@@ -54,17 +66,17 @@ h1 {
 
 /* Специфічні стилі для кожного типу */
 .success {
-    color: green;
+    color: var(--alert-succes,green);
 }
 
 
 .warning {
-    color: orange;
+    color: var(--alert-warning,orange);
 }
 
 
 .error {
-    color: red;
+    color: var(--alert-error,red);
 }
 
 /* ❌ Застосується до всіх посилань у документі */
