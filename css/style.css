@@ -40,7 +40,7 @@ h1 {
 
 /* Примінимо стилі до групи елементів */
 .list-item {
-    color:blueviolet;
+    color:var(--main-color);
 }
 
 .red {
